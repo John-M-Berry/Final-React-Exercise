@@ -3,7 +3,7 @@ import './MCUShows.css';
 // 1b. Create a function component using an arrow function expression called MCUShows
 
 // 5c. Go back to the MCUShows.js file. Plug the values from the dates property, which holds the value of the releaseDates object, in each p element after each appropriate show name. (HINT: The properties created for a component are stored in an object that can be accessed via a parameter in a function component)
-const MCUShows = ({dates}) => {
+const MCUShows = ({dates, randomAvenger, nextAvenger}) => {
     // 1c. Inside the MCUShows function/component, use the RETURN keyword with parentheses to have the MCUShows function/component return the following elements inside of a single div: h1, h2, and 4 p (paragraph) elements. Put the following text in each element. (NOTE: Notice the colon and space after each show name)
     return (
             // h1: "Disney+"
@@ -24,6 +24,10 @@ const MCUShows = ({dates}) => {
       <p>The Falcon and the Winter Soldier: {dates.falconWinter}</p>
       <p>Loki: {dates.loki}</p>
       <p>Hawkeye: {dates.hawkeye}</p>
+      {/* // 6e. In the MCUShows component create a button below the final p (paragraph) element. Set the content/text for the button to the following text: "RANDOM AVENGER". */}
+      <button onClick={randomAvenger}>RANDOM AVENGER</button>
+      {/* // 7c. In the MCUShows component create another button below the "RANDOM AVENGER" button. Set the content/text for the button to the following text: "NEXT AVENGER". */}
+      <button onClick={nextAvenger}>NEXT AVENGER</button>
         </div>
     );
 }
