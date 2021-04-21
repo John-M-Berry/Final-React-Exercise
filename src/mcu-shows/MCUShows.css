@@ -15,7 +15,7 @@
     color: rgba(255, 255, 255, 0.9);
 
 }
-
+/* // 4c. Using the "MCUShows" class in a descendant selector, set the text align center style to the h1 in the MCUShows component. */
 .MCUShows h1 {
     text-align: center;
 }
