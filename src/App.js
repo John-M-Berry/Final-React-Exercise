@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import MCUShows from './mcu-shows/MCUShows';
+const releaseDates = {
+ wandaVision: 'Jan 2021',
+ falconWinter: 'Mar 2021',
+ loki: 'June 2021',
+ hawkeye: 'Fall of 2021'
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+<h1>FINAL REACT EXERCISE</h1>
+<MCUShows />
     </div>
   );
 }
